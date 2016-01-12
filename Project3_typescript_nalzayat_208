@@ -1,0 +1,78 @@
+Script started on Wed 02 Dec 2015 03:24:13 PM EST
+[?1034hbash-4.1$ uname -a
+Linux zeus-1 2.6.32-573.8.1.el6.centos.plus.x86_64 #1 SMP Tue Nov 10 18:20:27 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+bash-4.1$ ls
+cs262.pgm  image.c  Makefile  Project3_typescript_nalzayat_208	StegoExtract.c
+half.pgm   image.h  Payload   Stego.c
+bash-4.1$ make
+gcc image.c -c
+gcc Stego.c -c
+gcc Stego.o image.o -o Stego
+gcc StegoExtract.c -c
+gcc StegoExtract.o image.o -o StegoExtract
+bash-4.1$ ls
+cs262.pgm  image.h   Payload			       Stego.c	       StegoExtract.o
+half.pgm   image.o   Project3_typescript_nalzayat_208  StegoExtract    Stego.o
+image.c    Makefile  Stego			       StegoExtract.c
+bash-4.1$ lsmake[2Plsuname -a[1P-a[3Pexit[2Plstar -cvf Project3_test.tar Project3_Nalzayat_208[C[C[C[C[C[C[C[C[C[Cls[Kcdlscd Project3_Nalzayat_208/[C[C[C[C[C[C[C[C[C[Cls[Kexit[2Plsvim Stego.c [C[C[C[C[C[C[C[C[C[Cls[Krm Stego.pgm out.txt [C[C[C[C[C[C[C[C[C[Cls[Kmake cleanls[Kvim out.txt [C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CStegoExtract Stego.pgm out.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cs262.pgm Stego.pgm Payload [C[C[C[C[C[C[C[C[C[Cmake[K[Kbash-4.1$ make[Kbash-4.1$ make[Kbash-4.1$ make[K[K[K[KStego half.pgm file.txt Payload
+
+Reading input file 'half.pgm'
+
+Reading binary file 'Payload'
+
+Writing file 'file.txt'
+bash-4.1$ [Kbash-4.1$ [Kbash-4.1$ [Kbash-4.1$ StegoExtract file.txt out.txt
+
+Reading input file 'file.txt'
+
+Reading binary file 'out.txt'
+
+The size of b.size is: 20
+
+The G number extracted is: G00890723
+
+Writing file 'out.txt'
+bash-4.1$ cat out.txt
+Please give me an A
+bash-4.1$ make clean
+rm -f Stego
+rm -f Stego.o
+rm -f StegoExtract.o
+rm -f image.o 
+rm -f StegoExtract
+rm file.txt
+rm out.txt
+bash-4.1$ ls
+cs262.pgm  image.c  Makefile  Project3_typescript_nalzayat_208	StegoExtract.c
+half.pgm   image.h  Payload   Stego.c
+bash-4.1$ lsmake cleancat out.txt[18@StegoExtract file.tx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C half.pgm file.txt Payload[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@s[1@c[1P[1@2[1@6[1@2[1@.[1@p[1@g[1@m
+bash: Stego: command not found
+bash-4.1$ make
+gcc image.c -c
+gcc Stego.c -c
+gcc Stego.o image.o -o Stego
+gcc StegoExtract.c -c
+gcc StegoExtract.o image.o -o StegoExtract
+bash-4.1$ makeStego cs262.pgm file.txt Payload
+
+Reading input file 'cs262.pgm'
+
+Reading binary file 'Payload'
+
+Writing file 'file.txt'
+bash-4.1$ Stego cs262.pgm file.txt Payload[C[C[C[C[C[C[C[C[C[Cmake[KStego cs262.pgm file.txt Payload[C[C[C[C[C[C[C[C[C[Cls[Kmake cleancat out.txt[18@StegoExtract file.tx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C half.pgm file.txt Payload[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2PExtract file.txt out.txt
+
+Reading input file 'file.txt'
+
+Reading binary file 'out.txt'
+
+The size of b.size is: 20
+
+The G number extracted is: G00890723
+
+Writing file 'out.txt'
+bash-4.1$ vim[K[K[Kcat out.txt
+Please give me an A
+bash-4.1$ exit
+
+Script done on Wed 02 Dec 2015 03:27:39 PM EST
